@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "target": "es2021",
+        "outDir": "./src",
+        "rootDir": "./dev",
+        "module": "commonjs"
+    }
+}
