@@ -1,8 +1,13 @@
 import { TodoItem } from "./todoItem";
 
+type ItemCounts = {
+  total: number;
+  incomplete: number;
+};
+
 export class TodoCollection {
   private nextId: number = 1;
-  private itemMap = new Map<number, TodoItem>();
+    protected itemMap = new Map<number, TodoItem>();
 
   constructor(public username: string, public todoItems: TodoItem[] = []) {
     todoItems.forEach((item) => this.itemMap.set(item.id, item));
@@ -41,5 +46,12 @@ export class TodoCollection {
         this.itemMap.delete(item.id);
       }
     });
+  }
+
+  getItemCounts(): ItemCounts {
+    return {
+      total: this.itemMap.size,
+      incomplete: this.getTodoItems(false).length,
+    };
   }
 }
