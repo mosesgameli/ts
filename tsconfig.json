@@ -3,6 +3,8 @@
         "target": "es2021",
         "outDir": "./src",
         "rootDir": "./dev",
-        "module": "commonjs"
+        "module": "commonjs",
+        "declaration": true,
+        "declarationDir": "./src/types"
     }
 }

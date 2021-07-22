@@ -13,10 +13,6 @@ let collection: TodoCollection = new TodoCollection("Gbemu", todos)
 console.clear()
 console.log(`${collection.username}'s Todo List`)
 
-let newId: number = collection.addTodo("Touch my soul")
-let todoItem: TodoItem = collection.getTodoById(newId)
-
-todoItem.printDetails()
 // collection.addTodo(todoItem)
-
-console.log(JSON.stringify(todoItem))
+collection.removeComplete()
+collection.getTodoItems(true).forEach(item => item.printDetails())
