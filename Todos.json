@@ -1,23 +1,8 @@
 {
   "tasks": [
     {
-      "id": 1,
-      "task": "Buy Flowers",
-      "complete": false
-    },
-    {
-      "id": 2,
-      "task": "shabalalaitated",
-      "complete": false
-    },
-    {
-      "id": 5,
-      "task": "Aloma Null",
-      "complete": false
-    },
-    {
-      "id": 6,
-      "task": "Yul Edoche",
+      "id": 3,
+      "task": "Learn PHP today",
       "complete": false
     }
   ]
